@@ -79,7 +79,7 @@ class Login extends React.Component {
         Log In
         <InputFieldIn
           type="text"
-          placeholder="username"
+          placeholder="Username"
           value={this.state.username ? this.state.username : ""}
           onChange={(val) => this.setInputValue("username", val)}
         />

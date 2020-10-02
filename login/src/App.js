@@ -84,12 +84,6 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="container">
-          <SubmitButton
-            text={"Log Out"}
-            disabled={false}
-            //  call back on onClick
-            onClick={() => this.doLoggingOut}
-          />
           <Login />
         </div>
       </div>

@@ -1,4 +1,4 @@
-// This is the component class for the log in input field
+// This is the component class for the log in input field containts the username and password fields
 
 import React from "react";
 
