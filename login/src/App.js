@@ -8,7 +8,7 @@ import "./App.css";
 // importing log in form / input form / import submit button
 
 import Login from "./Login";
-import Input from "./Input";
+
 import SubmitButton from "./SubmitButton";
 
 class App extends React.Component {
@@ -18,7 +18,7 @@ class App extends React.Component {
         method: "post",
         headers: {
           Accept: "application/json",
-          "Content-type": "application/json",
+          "Content-Type": "application/json",
         },
       });
       let result = await res.json();
@@ -44,7 +44,7 @@ class App extends React.Component {
         method: "post",
         headers: {
           Accept: "application/json",
-          "Content-type": "application/json",
+          "Content-Type": "application/json",
         },
       });
       let result = await res.json();
@@ -83,8 +83,13 @@ class App extends React.Component {
     }
     return (
       <div className="app">
-        Log In;
         <div className="container">
+          <SubmitButton
+            text={"Log Out"}
+            disabled={false}
+            //  call back on onClick
+            onClick={() => this.doLoggingOut}
+          />
           <Login />
         </div>
       </div>
